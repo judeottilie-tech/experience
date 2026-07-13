@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fredoka", ui-rounded, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-pixel: "Silkscreen", ui-monospace, monospace;
+
+
+  --color-cream: #fff8fc;
+  --color-cream-deep: #fdeffa;
+  --color-mint: #f0fdfa;
+
+ 
+  --color-ink: #2b1b3d;
+  --color-ink-soft: #6b5b7b;
+
+
+  --color-coral: #ff3ea5;
+  --color-coral-dark: #e01e86;
+  --color-sun: #ffd93d;
+  --color-teal: #35c9f0;
+  --color-teal-dark: #1aa8cf;
+  --color-purple: #8c52ff;
+  --color-lime: #a6e22e;
+
+  --color-card: #ffffff;
+  --color-line: #f3d9ec;
+}
+
+html[data-theme='dark'] {
+  --color-cream: #1a1420;
+  --color-cream-deep: #241b30;
+  --color-mint: #182420;
+
+  --color-ink: #f6ecff;
+  --color-ink-soft: #b6a6c9;
+
+  --color-coral: #ff6bb5;
+  --color-coral-dark: #ff3ea5;
+  --color-sun: #ffdd6b;
+  --color-teal: #5cd6f5;
+  --color-teal-dark: #35c9f0;
+  --color-purple: #a878ff;
+  --color-lime: #c3f24a;
+
+  --color-card: #251c30;
+  --color-line: #3c2d4a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-coral);
+  color: var(--color-cream);
+}
+
+
+.gloss {
+  position: relative;
+  isolation: isolate;
+}
+.gloss::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 55%);
+  pointer-events: none;
+}
+
+
+.game-btn {
+  box-shadow: 0 4px 0 0 var(--btn-shadow, rgba(0, 0, 0, 0.2));
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.game-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 var(--btn-shadow, rgba(0, 0, 0, 0.2));
+}
