@@ -62,7 +62,7 @@ export default function Hero() {
           className="flex flex-wrap items-center gap-4"
         >
           <a
-            href="#work"
+            href="#projects"
             className="gloss game-btn inline-flex items-center gap-1 rounded-full bg-coral px-6 py-3 text-base font-bold text-white"
             style={{ '--btn-shadow': 'var(--color-coral-dark)' }}
           >
