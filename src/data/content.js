@@ -77,7 +77,7 @@ export const projects = [
       'Front end Capstone project: React app that lets artists accept commission requests straight from their portfolio page with no guest account required.',
     tags: ['React', 'JavaScript', 'Vite', 'Tailwind CSS', 'REST API'],
     github: 'https://github.com/judeottilie-tech/portfol.io',
-    live: null,
+    live: 'https://portfoleyeoh.vercel.com',
     accent: 'coral',
   },
   {
