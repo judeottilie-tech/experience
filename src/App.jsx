@@ -10,7 +10,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CursorTrail from './components/CursorTrail'
 import PixelPet from './components/PixelPet'
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
