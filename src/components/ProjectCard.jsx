@@ -26,58 +26,70 @@ export default function ProjectCard({ project, index }) {
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
       whileHover={{ y: -6, rotate: index % 2 === 0 ? -0.6 : 0.6 }}
-      className="flex flex-col rounded-[1.75rem] bg-card p-6 shadow-[0_18px_40px_-16px_var(--glow)] md:p-7"
+      className="flex flex-col overflow-hidden rounded-[1.75rem] bg-card shadow-[0_18px_40px_-16px_var(--glow)]"
       style={{ '--glow': accent.glow }}
     >
-      <div className="mb-3 flex items-center justify-between gap-2">
-        <Heart color={accent.color} className="h-4 w-4" />
-        <span className={`rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide ${STATUS_STYLE[project.status]}`}>
-          {project.status}
-        </span>
-      </div>
+      {project.image && (
+        <div className="aspect-video overflow-hidden">
+          <img
+            src={project.image}
+            alt={`${project.name} preview`}
+            className="h-full w-full object-cover object-top"
+          />
+        </div>
+      )}
 
-      <h3 className="mb-2 font-display text-2xl font-semibold text-ink">{project.name}</h3>
-      <p className="mb-4 text-sm leading-relaxed text-ink-soft md:text-base">
-        {project.description}
-      </p>
-
-      <div className="mb-5 flex flex-wrap gap-2">
-        {project.tags.map((tag) => (
-          <span key={tag} className={`rounded-full px-3 py-1 text-xs font-semibold ${accent.chip}`}>
-            {tag}
+      <div className="flex flex-1 flex-col p-6 md:min-h-96 md:p-7">
+        <div className="mb-3 flex items-center justify-between gap-2">
+          <Heart color={accent.color} className="h-4 w-4" />
+          <span className={`rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide ${STATUS_STYLE[project.status]}`}>
+            {project.status}
           </span>
-        ))}
-      </div>
+        </div>
 
-      <div className="mt-auto flex flex-wrap items-center gap-3">
-        {project.live && (
+        <h3 className="mb-2 font-display text-2xl font-semibold text-ink">{project.name}</h3>
+        <p className="mb-4 text-sm leading-relaxed text-ink-soft md:text-base">
+          {project.description}
+        </p>
+
+        <div className="mb-5 flex flex-wrap gap-2">
+          {project.tags.map((tag) => (
+            <span key={tag} className={`rounded-full px-3 py-1 text-xs font-semibold ${accent.chip}`}>
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <div className="mt-auto flex flex-wrap items-center gap-3">
+          {project.live && (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noreferrer"
+              className="gloss inline-flex items-center gap-1 rounded-full bg-ink px-4 py-2 text-sm font-bold text-cream"
+            >
+              live site <ArrowUpRight size={14} />
+            </a>
+          )}
           <a
-            href={project.live}
-            target="_blank"
-            rel="noreferrer"
-            className="gloss inline-flex items-center gap-1 rounded-full bg-ink px-4 py-2 text-sm font-bold text-cream"
-          >
-            live site <ArrowUpRight size={14} />
-          </a>
-        )}
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-1 rounded-full bg-cream-deep px-4 py-2 text-sm font-bold text-ink"
-        >
-          <GithubIcon size={14} /> client
-        </a>
-        {project.githubSecondary && (
-          <a
-            href={project.githubSecondary}
+            href={project.github}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1 rounded-full bg-cream-deep px-4 py-2 text-sm font-bold text-ink"
           >
-            <GithubIcon size={14} /> API
+            <GithubIcon size={14} /> client
           </a>
-        )}
+          {project.githubSecondary && (
+            <a
+              href={project.githubSecondary}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 rounded-full bg-cream-deep px-4 py-2 text-sm font-bold text-ink"
+            >
+              <GithubIcon size={14} /> API
+            </a>
+          )}
+        </div>
       </div>
     </motion.div>
   )
