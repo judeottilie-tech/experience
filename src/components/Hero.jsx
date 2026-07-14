@@ -63,7 +63,7 @@ export default function Hero() {
         >
           <a
             href="#projects"
-            className="gloss game-btn inline-flex items-center gap-1 rounded-full bg-coral px-6 py-3 text-base font-bold text-white"
+            className="gloss game-btn inline-flex items-center gap-1 rounded-full bg-coral px-6 py-3 text-base font-bold text-[#2b1b3d]"
             style={{ '--btn-shadow': 'var(--color-coral-dark)' }}
           >
             see my work <ArrowUpRight size={18} />

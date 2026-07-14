@@ -20,14 +20,9 @@ export default function About() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
         >
-          <p className="mb-3 font-pixel text-sm tracking-wide text-coral uppercase">
+          <h2 className="mb-3 font-pixel text-sm tracking-wide text-coral uppercase">
             about
-          </p>
-          {/* 
-          <h2 className="mb-6 font-display text-3xl font-semibold text-ink md:text-4xl">
-            {about.heading}
           </h2>
-          */}
           <div className="flex flex-col gap-4 text-base leading-relaxed text-ink-soft md:text-lg">
             {about.paragraphs.map((p) => (
               <p key={p.slice(0, 20)}>{p}</p>
@@ -42,9 +37,9 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="flex flex-col"
         >
-          <p className="mb-3 font-pixel text-sm tracking-wide text-teal-dark uppercase">
+          <h3 className="mb-3 font-pixel text-sm tracking-wide text-teal-dark uppercase">
             education
-          </p>
+          </h3>
           <div className="rounded-[1.75rem] bg-card p-6 shadow-[0_16px_36px_-12px_rgba(43,27,61,0.25)]">
             <ul className="flex flex-col gap-4">
               {education.map((e) => (
