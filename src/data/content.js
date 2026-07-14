@@ -31,10 +31,11 @@ export const experience = [
     period: 'Feb 2026 – Present',
     location: 'Nashville, TN',
     points: [
-      'Built and deployed full-stack apps using React, JavaScript, C#, .NET, Python, and Django through intensive project-based training',
-      'Collaborated in Agile teams using Git/GitHub for version control, code review, and issue tracking',
-      'Developed accessible, responsive UIs with React, HTML5, CSS3, SASS, and Bootstrap',
-      'Implemented test-driven server-side development with Python, Django, and SQL; built RESTful APIs with full CRUD',
+      'Built and deployed multiple full-stack apps using React, JavaScript, C#, .NET, Python, and Django through intensive project-based training',
+      'Collaborated in Agile teams using Git/GitHub for version control, code review, and project management with GitHub Projects and issue tracking',
+      'Developed accessible, responsive UIs applying design background to create cohesive user experiences with React, HTML5, CSS3, SASS, and Bootstrap',
+      'Implemented server-side, test-driven development with Python, Django, and SQL; built RESTful APIs with full CRUD functionality',
+      'Automated build tasks with Grunt including linting (JSHint), module bundling (Browserify), and SASS compilation',
     ],
   },
   {
@@ -43,8 +44,8 @@ export const experience = [
     period: 'Oct 2025 – Present',
     location: 'Remote | Nashville, TN',
     points: [
-      'Track individualized goal progress across multiple mentees with intellectual or developmental disabilities',
-      'Facilitate weekly meetings to develop initiatives and support life goals',
+      'Manage and track individualized goal progress across multiple mentees with intellectual or developmental disabilities, applying structured data organization, prioritization, and progress reviews',
+      'Facilitate weekly meetings to develop initiatives and support life goals, applying cultural competency and advocacy principles',
     ],
   },
   {
@@ -53,7 +54,7 @@ export const experience = [
     period: 'Apr 2021 – Aug 2021',
     location: 'Hendersonville, TN',
     points: [
-      'Designed and coordinated pre-press production for advertising wraps, signage, and packaging using Adobe Creative Suite and Autodesk Civil 3D',
+      'Designed and coordinated pre-press production for advertising wraps, healthcare signage, product packaging, and medical office signage using Adobe Creative Suite and Autodesk Civil 3D',
       'Created UX/UI-oriented design work for websites, apps, and emails under high-pressure deadlines',
     ],
   },
@@ -63,8 +64,18 @@ export const experience = [
     period: 'Jan 2020 – Apr 2020',
     location: 'Hybrid | Nashville, TN',
     points: [
-      'Built cross-platform file conversion pipelines between Maya, Illustrator, and CorelDRAW for laser-cut fabrication assets',
-      'Coordinated asset delivery timelines across engineering, design, and management teams',
+      'Built cross-platform file conversion pipelines between Maya, Illustrator, and CorelDRAW for laser-cut fabrication assets from licensed IP projects, maintaining fidelity through UV mapping and manual vector tracing',
+      'Collaborated cross-functionally with engineering, design, and management teams to coordinate asset delivery timelines and translate technical requirements between departments',
+    ],
+  },
+  {
+    role: 'General employment during schooling',
+    org: 'Serving, Retail & Creative Industries',
+    period: 'Jan 2018 – Dec 2024',
+    location: 'Nashville, TN & Bradenton, FL',
+    points: [
+      'Simultaneously held two part-time roles across serving, retail, and creative industries to self-fund education through community college and a bachelor’s degree',
+      'Built strong work ethic, time management, and self-motivation managing competing priorities under pressure',
     ],
   },
 ]
@@ -98,7 +109,7 @@ export const projects = [
     //status: 'GitHub',
     description:
       'A full-stack content management system where users create accounts and publish articles for public consumption. Built with a 3-person team using C#/ASP.NET Core API on one side, React client on the other.',
-    tags: ['React', 'Vite', 'C#', 'ASP.NET Core', 'PostgreSQL', 'EF Core'],
+    tags: ['React', 'JavaScript', 'CSS', 'HTML', 'C#', '.NET', 'EF Core', 'RESTful APIs', 'Git/GitHub'],
     github: 'https://github.com/NSS-Day-Cohort-C80/Original-Tabloid-client-ltyrcl',
     githubSecondary: 'https://github.com/NSS-Day-Cohort-C80/Original-Tabloid-api-ltyrcl',
     live: null,
@@ -110,8 +121,9 @@ export const projects = [
     //status: 'GitHub',
     description:
       'A solar-system mining marketplace where colony governors browse mining facilities, add minerals to a cart, and check out. Updates both colony and facility inventory in real time. Built with a 3-person team.',
-    tags: ['JavaScript', 'CSS', 'HTML', 'Fetch API'],
+    tags: ['React', 'JavaScript', 'CSS', 'HTML', 'C#', '.NET', 'EF Core', 'RESTful APIs', 'Git/GitHub'],
     github: 'https://github.com/NSS-Day-Cohort-C80/Exomine-client-emqknd',
+    githubSecondary: 'https://github.com/EricMartinez007/exomine-api',
     live: null,
     image: '/exomine-demo.gif',
     accent: 'purple',

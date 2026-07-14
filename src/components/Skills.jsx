@@ -25,7 +25,7 @@ export default function Skills() {
       />
       <Confetti set={1} />
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="mb-7 font-pixel text-sm tracking-wide text-coral uppercase">
+        <p className="mb-10 font-pixel text-sm tracking-wide text-coral uppercase">
           skills
         </p>
         {/* 
