@@ -10,6 +10,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CursorTrail from './components/CursorTrail'
 import PixelPet from './components/PixelPet'
+import { Analytics } from "@vercel/analytics/next";
 
 function App() {
   return (
@@ -33,7 +34,9 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
     </MotionConfig>
+  
   )
 }
 
