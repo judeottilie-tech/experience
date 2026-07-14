@@ -9,7 +9,7 @@ export default function Experience() {
     <section id="experience" className="relative overflow-hidden bg-cream">
       <Confetti set={2} />
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="mb-3 font-pixel text-sm tracking-wide text-coral uppercase">Experience</p>
+        <h2 className="mb-3 font-pixel text-sm tracking-wide text-coral uppercase">Experience</h2>
         {/* 
         <h2 className="mb-12 font-display text-3xl font-semibold text-ink md:text-4xl">
          
