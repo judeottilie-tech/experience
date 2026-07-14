@@ -77,7 +77,7 @@ export default function ProjectCard({ project, index }) {
             rel="noreferrer"
             className="inline-flex items-center gap-1 rounded-full bg-cream-deep px-4 py-2 text-sm font-bold text-ink"
           >
-            <GithubIcon size={14} /> client
+            <GithubIcon size={14} /> {project.githubLabel || 'client'}
           </a>
           {project.githubSecondary && (
             <a
