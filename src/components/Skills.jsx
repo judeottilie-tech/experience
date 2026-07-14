@@ -52,9 +52,9 @@ export default function Skills() {
               {skills.core.map((skill) => (
                 <span
                   key={skill}
-                  className="gloss inline-flex items-center gap-1.5 rounded-full bg-teal px-4 py-2 text-sm font-bold text-white shadow-[0_6px_16px_-6px_rgba(53,201,240,0.6)]"
+                  className="gloss inline-flex items-center gap-1.5 rounded-full bg-teal px-4 py-2 text-sm font-bold text-[#102a33]"
                 >
-                  <Heart color="#ffffff" className="h-3.5 w-3.5" />
+                  <Heart color="#102a33" className="h-3.5 w-3.5" />
                   {skill}
                 </span>
               ))}

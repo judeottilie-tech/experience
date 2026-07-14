@@ -42,8 +42,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="max-w-3xl font-display text-5xl leading-[1.08] font-semibold tracking-tight text-ink md:text-7xl"
         >
-          building software with
-          <span className="text-coral"> design in mind</span>
+          jude ottilie andersen
+          <span className="text-coral"> software developer</span>
         </motion.h1>
 
         <motion.p

@@ -1,5 +1,5 @@
 export const profile = {
-  name: 'Jude Andersen',
+  name: 'Jude Ottilie',
   title: 'Full-Stack Developer',
   subtitle: 'React · JavaScript · C# · .NET + with a graphic design background',
   location: 'Nashville, TN',
@@ -72,12 +72,13 @@ export const experience = [
 export const projects = [
   {
     name: 'portfol.io',
-    status: 'shipping soon',
+    //status: '',
     description:
       'Front end Capstone project: React app that lets artists accept commission requests straight from their portfolio page with no guest account required.',
     tags: ['React', 'JavaScript', 'Vite', 'Tailwind CSS', 'REST API'],
     github: 'https://github.com/judeottilie-tech/portfol.io',
-    live: 'https://portfoleyeoh.vercel.com',
+    live: 'https://portfoleyeoh.vercel.app',
+    image: '/portfolio-io-demo.gif',
     accent: 'coral',
   },
   {
@@ -88,6 +89,7 @@ export const projects = [
     tags: ['React', 'Auth', 'CRUD', 'REST API'],
     github: 'https://github.com/judeottilie-tech',
     live: null,
+    image: '/card-captor-wireframe.png',
     accent: 'teal',
   },
   {
@@ -99,6 +101,7 @@ export const projects = [
     github: 'https://github.com/NSS-Day-Cohort-C80/Original-Tabloid-client-ltyrcl',
     githubSecondary: 'https://github.com/NSS-Day-Cohort-C80/Original-Tabloid-api-ltyrcl',
     live: null,
+    image: '/tabloid-demo.gif',
     accent: 'purple',
   },
   {
@@ -109,6 +112,7 @@ export const projects = [
     tags: ['JavaScript', 'CSS', 'HTML', 'Fetch API'],
     github: 'https://github.com/NSS-Day-Cohort-C80/Exomine-client-emqknd',
     live: null,
+    image: '/exomine-demo.gif',
     accent: 'purple',
   },
 ]
