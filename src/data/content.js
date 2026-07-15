@@ -158,7 +158,7 @@ export const skills = {
     "Bootstrap",
     "Vite",
   ],
-  growing: ["Python", "Django", "SQL"],
+  growing: ["Python", "Django", "Typescript", "SQL", "Linux", ],
   design: [
     "UI/UX Design",
     "Accessible Design",
