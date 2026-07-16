@@ -100,7 +100,7 @@ export const projects = [
     status: 'in progress',
     description:
       [ "Full-stack capstone project: an online editor for trading card collectors to design binder layouts before ever touching the cards. Drag cards into slots, name and save layouts, come back and keep editing.",
-      " CardCaptor is in progress and I will add updates here as I get closer to completing it!" ],
+      " Card Captor is in progress and I will add updates here as I get closer to completing it!" ],
     tags: ['React', 'Auth', 'CRUD', 'REST API'],
     github: 'https://github.com/judeottilie-tech',
     githubLabel: 'coming soon',
