@@ -26,7 +26,7 @@ export default function ProjectCard({ project, index }) {
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
       whileHover={{ y: -6, rotate: index % 2 === 0 ? -0.6 : 0.6 }}
-      className="flex flex-col overflow-hidden rounded-[1.75rem] bg-card shadow-[0_18px_40px_-16px_var(--glow)]"
+      className="flex flex-col overflow-hidden rounded-[1.75rem] bg-card shadow-[0_18px_20px_-1px_var(--glow)]"
       style={{ '--glow': accent.glow }}
     >
       {project.image && (
@@ -75,7 +75,7 @@ export default function ProjectCard({ project, index }) {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1 rounded-full bg-cream-deep px-4 py-2 text-sm font-bold text-ink"
+            className="inline-flex items-center gap-2 rounded-full bg-cream-deep px-4 py-2 text-sm font-bold text-ink"
           >
             <GithubIcon size={14} /> {project.githubLabel || 'client'}
           </a>
