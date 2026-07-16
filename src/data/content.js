@@ -15,16 +15,16 @@ export const profile = {
 export const about = {
   heading: "designing and coding",
   paragraphs: [
-    "hi! my name is jude.", 
-    "i'm a junior full-stack developer building with react, javascript, and c#/.net. before this, i spent years as a graphic designer and illustrator. that background is why i design accessible, intentional interfaces instead of just making things that work.",
+    "hi! my name is jude.",
+    "i'm a junior full-stack developer building with React, JavaScript, + C#/.NET.",
+    " my background as a graphic designer and illustrator is why i design accessible, intentional interfaces instead of just making things that work.",
     "my favorite project so far is portfol.io, a full-stack react app that lets artists accept commission requests straight from their portfolio page, no guest account required. i designed the ux, built the api, and shipped it end to end.",
-    "i'm looking for a junior or entry-level front-end or full-stack role where i can keep building things people enjoy using.", 
-    
-    
+    "i'm looking for a junior or entry-level front-end or full-stack role where i can keep building things people enjoy using!",
+
     // "I spent years as a graphic designer — pre-press production, signage, UI/UX work for web and email — before switching into software development at Nashville Software School. That background didn't get left behind, it's the lens I build through: typography, hierarchy, accessibility, and how something feels to use, not just whether it works.",
     //"Now I'm shipping full-stack projects with React, JavaScript, C#, .NET, Python, and Django, working in Agile teams with Git/GitHub, and building RESTful APIs with real CRUD functionality. I'm looking for a junior or entry-level front-end / full-stack role where I can keep shipping and bring a design eye to every feature.",
   ],
-}
+};
 
 export const experience = [
   {
