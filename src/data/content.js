@@ -86,8 +86,9 @@ export const projects = [
   {
     name: 'portfol.io',
     //status: '',
-    description:
-      'Front end Capstone project: React app that lets artists accept commission requests straight from their portfolio page with no guest account required.',
+    description: [
+      "Front end Capstone project: React app that lets artists accept commission requests straight from their portfolio page with no guest account required.",
+      " The hardest part was designing for two very separate users on the same page. The artist managing listings behind a login, and a guest submitting a commission with no account. I built the guest-facing form to feel like part of the artist's portfolio, not a contact form, while keeping the dashboard side fully separate with its own CRUD logic for managing commissions and status." ],
     tags: ['React', 'JavaScript', 'Vite', 'Tailwind CSS', 'REST API'],
     github: 'https://github.com/judeottilie-tech/portfol.io',
     live: 'https://portfoleyeoh.vercel.app',
