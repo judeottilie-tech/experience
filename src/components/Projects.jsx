@@ -24,7 +24,7 @@ export default function Projects() {
           mix of solo and team projects. full-stack apps built + designed end to end.
         </p>*/}
 
-        <div className="grid items-start gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project, i) => (
             <ProjectCard key={project.name} project={project} index={i} />
           ))}
