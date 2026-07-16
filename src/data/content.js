@@ -16,7 +16,7 @@ export const about = {
   heading: "designing and coding",
   paragraphs: [
     "hi! my name is jude.", 
-    "i'm a junior full-stack developer with a passion for UI/UX + design. i spent years as a graphic designer and illustrator before shifting to software development. my goal is to create accessible applications where i'm able to utilize ;my problem solving skills and designer experience and make beautiful (yet functional) builds.", 
+    "i'm a junior full-stack developer with a passion for UI/UX + design. i spent years as a graphic designer and illustrator before shifting to software development. my goal is to create accessible applications where i'm able to utilize my problem solving skills and designer experience and make beautiful (yet functional) builds.", 
     
     
     // "I spent years as a graphic designer — pre-press production, signage, UI/UX work for web and email — before switching into software development at Nashville Software School. That background didn't get left behind, it's the lens I build through: typography, hierarchy, accessibility, and how something feels to use, not just whether it works.",
