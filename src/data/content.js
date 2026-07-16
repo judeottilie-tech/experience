@@ -16,7 +16,9 @@ export const about = {
   heading: "designing and coding",
   paragraphs: [
     "hi! my name is jude.", 
-    "i'm a junior full-stack developer with a passion for UI/UX + design. i spent years as a graphic designer and illustrator before shifting to software development. my goal is to create accessible applications where i'm able to utilize my problem solving skills and designer experience and make beautiful (yet functional) builds.", 
+    "i'm a junior full-stack developer building with react, javascript, and c#/.net. before this, i spent years as a graphic designer and illustrator. that background is why i design accessible, intentional interfaces instead of just making things that work.",
+    "my favorite project so far is portfol.io, a full-stack react app that lets artists accept commission requests straight from their portfolio page, no guest account required. i designed the ux, built the api, and shipped it end to end.",
+    "i'm looking for a junior or entry-level front-end or full-stack role where i can keep building things people enjoy using.", 
     
     
     // "I spent years as a graphic designer — pre-press production, signage, UI/UX work for web and email — before switching into software development at Nashville Software School. That background didn't get left behind, it's the lens I build through: typography, hierarchy, accessibility, and how something feels to use, not just whether it works.",
@@ -107,8 +109,9 @@ export const projects = [
   {
     name: 'Tabloid',
     //status: 'GitHub',
-    description:
-      'A full-stack content management system where users create accounts and publish articles for public consumption. Built with a 3-person team using C#/ASP.NET Core API on one side, React client on the other.',
+    description: [
+      "A full-stack content management system where users create accounts and publish articles for public consumption. Built with a 3-person team using C#/ASP.NET Core API on one side, React client on the other.", 
+      " I implemented the majority of the front end- wiring up fetch calls, connecting every view to the API, and making sure the UI felt cohesive across the whole app. On the backend side, I got hands-on with EF Core and LINQ to help query and shape the data the front end needed."],
     tags: ['React', 'JavaScript', 'CSS', 'HTML', 'C#', '.NET', 'EF Core', 'RESTful APIs', 'Git/GitHub'],
     github: 'https://github.com/NSS-Day-Cohort-C80/Original-Tabloid-client-ltyrcl',
     githubSecondary: 'https://github.com/NSS-Day-Cohort-C80/Original-Tabloid-api-ltyrcl',
@@ -119,8 +122,9 @@ export const projects = [
   {
     name: 'Exomine',
     //status: 'GitHub',
-    description:
-      'A solar-system mining marketplace where colony governors browse mining facilities, add minerals to a cart, and check out. Updates both colony and facility inventory in real time. Built with a 3-person team.',
+    description: [
+      "A solar-system mining marketplace where colony governors browse mining facilities, add minerals to a cart, and check out. Updates both colony and facility inventory in real time. Built with a 3-person team.",
+      " The tricky part was state: a governor's cart, the facility's mineral stock, and the colony's inventory all had to stay in sync as purchases happened. I built the dropdown and radio components that drove that flow and made sure the UI reflected real inventory the moment a purchase went through." ],
     tags: ['React', 'JavaScript', 'CSS', 'HTML', 'C#', '.NET', 'EF Core', 'RESTful APIs', 'Git/GitHub'],
     github: 'https://github.com/NSS-Day-Cohort-C80/Exomine-client-emqknd',
     githubSecondary: 'https://github.com/EricMartinez007/exomine-api',
