@@ -100,7 +100,7 @@ export const projects = [
     description:
       [ "Full-stack capstone project: an online editor for trading card collectors to design binder layouts before ever touching the cards. Drag cards into slots, name and save layouts, come back and keep editing.",
       " Right now, filling a slot opens a card picker popup pulling from a set of cards I've preloaded, kept simple while I get the core layout, save, and edit flow solid. Search and a full card database are next on the list." ],
-    tags: ['React', 'Auth', 'CRUD', 'REST API'],
+    tags: ['React', 'JavaScript', 'C#', '.NET', 'Tailwind CSS', 'EF Core', 'RESTful APIs', 'Git/GitHub'],
     github: 'https://github.com/judeottilie-tech/CardCaptor',
     live: 'https://cardcaptor.vercel.app/',
     image: '/card-captor-wireframe.png',
