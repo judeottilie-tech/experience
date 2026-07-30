@@ -103,7 +103,7 @@ export const projects = [
     tags: ['React', 'JavaScript', 'C#', '.NET', 'Tailwind CSS', 'EF Core', 'RESTful APIs', 'Git/GitHub'],
     github: 'https://github.com/judeottilie-tech/CardCaptor',
     live: 'https://cardcaptor.vercel.app/',
-    image: '/card-captor-wireframe.png',
+    image: '/card-captor-demo.gif',
     accent: 'teal',
   },
   {
