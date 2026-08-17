@@ -221,12 +221,12 @@ export const skills = {
     "Problem-solving",
     "Communication",
     "Collaboration",
+    "Curiosity",
     "Time Management",
     "Agile Teamwork",
     "Inclusivity",
     "Accessibility",
     "CRUD Applications",
-    "Curiosity", 
   ],
 };
 
