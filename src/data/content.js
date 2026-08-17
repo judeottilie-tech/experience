@@ -227,6 +227,7 @@ export const skills = {
     "Inclusivity",
     "Accessibility",
     "CRUD Applications",
+    "Fast Learner",
   ],
 };
 
