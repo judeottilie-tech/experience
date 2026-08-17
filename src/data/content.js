@@ -198,14 +198,24 @@ export const skills = {
     "Vite",
     "SQL",
     "Typescript",
-    "Figma"
+    "Figma",
   ],
-  growing: [ "AWS", "Azure", "Python", "Django", "Linux", "React Native", "Docker", "Godot" ],
+  growing: [
+    "AWS",
+    "Azure",
+    "Python",
+    "Django",
+    "Linux",
+    "React Native",
+    "Docker",
+    "Godot",
+  ],
   design: [
     "UI/UX Design",
     "Accessible Design",
     "Responsive Design",
     "Typography",
+    "Visual Hierarchy",
   ],
   strengths: [
     "Problem-solving",
@@ -215,7 +225,8 @@ export const skills = {
     "Agile Teamwork",
     "Inclusivity",
     "Accessibility",
-    "CRUD Applications"
+    "CRUD Applications",
+    "Curiosity", 
   ],
 };
 
