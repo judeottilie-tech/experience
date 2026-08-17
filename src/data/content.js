@@ -228,7 +228,7 @@ export const skills = {
     "Accessibility",
     "CRUD Applications",
     "Fast Learner",
-    "Adaptable"
+   // "Adaptable"
   ],
 };
 
