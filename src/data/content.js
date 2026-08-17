@@ -197,9 +197,10 @@ export const skills = {
     "Bootstrap",
     "Vite",
     "SQL",
-    "Typescript"
+    "Typescript",
+    "Figma"
   ],
-  growing: [ "AWS", "Azure", "Python", "Django", "Linux", ],
+  growing: [ "AWS", "Azure", "Python", "Django", "Linux", "React Native", "Docker", "Godot" ],
   design: [
     "UI/UX Design",
     "Accessible Design",
