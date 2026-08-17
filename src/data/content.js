@@ -213,6 +213,8 @@ export const skills = {
     "Collaboration",
     "Time Management",
     "Agile Teamwork",
+    "Inclusivity",
+    
   ],
 };
 
