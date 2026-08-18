@@ -203,6 +203,7 @@ export const skills = {
   growing: [
     "AWS",
     "Azure",
+    "Flutter",
     "Python",
     "Django",
     "Linux",
