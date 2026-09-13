@@ -6,7 +6,7 @@ export const profile = {
   email: 'jude.ottilie@gmail.com',
   github: 'https://github.com/judeottilie-tech',
   linkedin: 'https://www.linkedin.com/in/judeottilie-tech/',
-  resumeHref: '/Jude-Andersen-Resume.pdf',
+  resumeHref: '/JudeAndersen_UIUXDResume_2026.pdf',
   blurb:
    //"I build full-stack web apps with React, JavaScript, and C#/.NET. Before I wrote a line of code I was a graphic designer, so I think about layout, hierarchy, and the person on the other side of the screen before I think about state."
    "",
