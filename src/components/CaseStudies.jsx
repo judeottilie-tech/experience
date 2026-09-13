@@ -36,7 +36,7 @@ export default function CaseStudies() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {caseStudies.map((study, i) => {
-            const accent = ACCENTS[ACCENT_CYCLE[i % ACCENT_CYCLE.length]]
+            const accent = ACCENTS[study.accent] || ACCENTS[ACCENT_CYCLE[i % ACCENT_CYCLE.length]]
             return (
               <motion.div
                 key={study.slug}
