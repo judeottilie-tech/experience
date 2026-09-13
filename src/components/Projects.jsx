@@ -2,6 +2,7 @@ import { projects } from '../data/content'
 import ProjectCard from './ProjectCard'
 import Star from './Star'
 import Confetti from './Confetti'
+import Wave from './Wave'
 
 export default function Projects() {
   return (
@@ -13,7 +14,7 @@ export default function Projects() {
       />
       <Confetti set={1} />
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <h2 className="mb-3 font-pixel text-sm tracking-wide text-coral uppercase">
+        <h2 className="mb-3 font-pixel text-sm tracking-wide text-coral-dark uppercase">
           projects
         </h2>
 
@@ -30,6 +31,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      <Wave fill="var(--color-cream-deep)" />
     </section>
   );
 }

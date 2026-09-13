@@ -20,7 +20,7 @@ export default function About() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-3 font-pixel text-sm tracking-wide text-coral uppercase">
+          <h2 className="mb-3 font-pixel text-sm tracking-wide text-coral-dark uppercase">
             about
           </h2>
           <div className="flex flex-col gap-4 text-base leading-relaxed text-ink-soft md:text-lg">

@@ -25,7 +25,7 @@ export default function Contact() {
           build with me!
         </motion.h2>
         <p className="mb-10 text-lg text-ink-soft">
-          i'm looking for a junior or entry-level front-end / full-stack role in nashville or remote!
+          i'm looking for a junior or entry-level front-end/ UI/UX design / full-stack role in nashville or remote!
           say hi :)
         </p>
 

@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Jude Ottilie',
-  title: 'Full-Stack Developer',
+  title: 'UI/UX Designer + Software Developer',
   subtitle: 'React · JavaScript · C# · .NET + with a graphic design background',
   location: 'Nashville, TN',
   email: 'jude.ottilie@gmail.com',
@@ -16,10 +16,10 @@ export const about = {
   heading: "designing and coding",
   paragraphs: [
     "hi! my name is jude.",
-    "i'm a junior full-stack developer building with React, JavaScript, + C#/.NET.",
+    "i'm a junior UI/UX designer and full-stack developer building with React, JavaScript, + C#/.NET.",
     " my background as a graphic designer and illustrator is why i design accessible, intentional interfaces instead of just making things that work.",
     //"my favorite project so far is portfol.io, a full-stack react app that lets artists accept commission requests straight from their portfolio page, no guest account required. i designed the ux, built the api, and shipped it end to end.",
-    "i'm looking for a junior or entry-level front-end or full-stack role where i can keep building things people enjoy using!",
+    "i'm looking for a junior or entry-level ui/ux, front-end, or full-stack role in nashville or remote! say hi :)",
 
     // "I spent years as a graphic designer — pre-press production, signage, UI/UX work for web and email — before switching into software development at Nashville Software School. That background didn't get left behind, it's the lens I build through: typography, hierarchy, accessibility, and how something feels to use, not just whether it works.",
     //"Now I'm shipping full-stack projects with React, JavaScript, C#, .NET, Python, and Django, working in Agile teams with Git/GitHub, and building RESTful APIs with real CRUD functionality. I'm looking for a junior or entry-level front-end / full-stack role where I can keep shipping and bring a design eye to every feature.",
@@ -51,6 +51,16 @@ export const experience = [
     ],
   },
   {
+    role: 'General employment during schooling',
+    org: 'Serving, Retail & Creative Industries',
+    period: 'Jan 2018 – Dec 2024',
+    location: 'Nashville, TN & Bradenton, FL',
+    points: [
+      'Simultaneously held two part-time roles across serving, retail, and creative industries to self-fund education through community college and a bachelor’s degree',
+      'Built strong work ethic, time management, and self-motivation managing competing priorities under pressure',
+    ],
+  },
+  {
     role: 'Contract Graphic Designer',
     org: 'Image360',
     period: 'Apr 2021 – Aug 2021',
@@ -68,16 +78,6 @@ export const experience = [
     points: [
       'Built cross-platform file conversion pipelines between Maya, Illustrator, and CorelDRAW for laser-cut fabrication assets from licensed IP projects, maintaining fidelity through UV mapping and manual vector tracing',
       'Collaborated cross-functionally with engineering, design, and management teams to coordinate asset delivery timelines and translate technical requirements between departments',
-    ],
-  },
-  {
-    role: 'General employment during schooling',
-    org: 'Serving, Retail & Creative Industries',
-    period: 'Jan 2018 – Dec 2024',
-    location: 'Nashville, TN & Bradenton, FL',
-    points: [
-      'Simultaneously held two part-time roles across serving, retail, and creative industries to self-fund education through community college and a bachelor’s degree',
-      'Built strong work ethic, time management, and self-motivation managing competing priorities under pressure',
     ],
   },
 ]
@@ -169,16 +169,74 @@ export const projects = [
   },
 ];
 
-// design area
-export const designWork = [
+export const caseStudies = [
   {
-    title: 'Middle Tennessee Gaming',
-    role: 'Client sticker & mascot design',
-    image: '/design-mtg-sticker.png',
+    slug: 'cardcaptor',
+    title: 'CardCaptor',
+    sector: 'product',
+    oneLiner: 'a binder-page layout planner for trading card collectors, built around the michi method of themed card curation.',
+    thumbnail: '/screen/editbinder_computer.webp',
+    cardBg: 'var(--color-cream)',
+    liveUrl: 'https://cardcaptor.vercel.app/',
+    role: 'UI/UX Designer & Full-Stack Developer',
+    duration: 'ongoing — started as an NSS capstone, still in active development',
+    tools: ['Figma', 'React', 'Tailwind CSS', 'C#', '.NET', 'EF Core'],
+    problem:
+      "i'm a trading card collector, and when i went looking for something to help plan binder layouts before touching the actual cards, i couldn't find anything built for it, especially for michi method organization. so i decided to build it myself.",
+    research: {
+      summary:
+        "since there wasn't an existing product to benchmark against, my research came from being the target user myself. i also wanted this to be usable by kids, so i looked into what makes an interface approachable and accessible for children specifically, not just adults.",
+      findings: [
+        'no existing product plans michi method layouts before you touch the actual cards',
+        'designing for kids means simpler, more forgiving interactions than a typical adult-focused app',
+      ],
+    },
+    wireframeImages: ['/card-captor-wireframe.png'],
+    mockupImages: [],
+    decisions: [
+      "built drag-and-drop on pointer events instead of native html5 drag-and-drop, since native drag never fires on touch devices, and this needed to work for kids on tablets too",
+      "changes stage locally and only save when you hit save, instead of auto-saving. i tried auto-save first and it didn't feel right, i wanted users to feel in control of when something's actually committed",
+      'kept the card picker simple at first with a small preloaded set, so the core layout, save, and edit flow could get solid before pulling in the full live card catalog',
+    ],
+    outcome:
+      "the mvp is live: auth, binder pages, card slots pulling from a live card catalog with search and filtering, drag-and-drop layout editing, and a starter-pet feature. i'm currently working on configurable grid layouts, public profiles, and image uploading for michi method cards.",
+    currentStateImages: [
+      { src: '/screen/dashboard_computer.webp', caption: 'binder pages dashboard' },
+      { src: '/screen/createbinder_computer.webp', caption: 'creating a new binder page' },
+      { src: '/screen/editbinder_computer.webp', caption: 'the binder page editor' },
+      { src: '/screen/pickcard_computer.webp', caption: 'the card picker, pulling from the live catalog' },
+    ],
+    currentStateImagesMobile: [
+      { src: '/screen/dashboard_phone.webp', caption: 'binder pages dashboard, mobile' },
+      { src: '/screen/createbinder_phone.webp', caption: 'creating a new binder page, mobile' },
+      { src: '/screen/editbinder_phone.webp', caption: 'the binder page editor, mobile' },
+      { src: '/screen/pickcard_phone.webp', caption: 'the card picker, mobile' },
+    ],
   },
 ]
 
-
+export const howIWork = [
+  {
+    title: "UI/UX Design",
+    body: "i sketch out user flows and wireframes before i touch any styling. i want every decision to have a reason behind it and make sense.",
+  },
+  {
+    title: "Accessible Design",
+    body: "accessibility is not an afterthought but something i plan from the get go. my first drafts plan for keyboard navigation, readability, contrast, and i follow all WCAG standards to make my work operable for everyone.",
+  },
+  {
+    title: "Responsive Design",
+    body: "i plan and design for compatibility on all computer monitors and mobile dimensions, making sure my applications are fluid on whatever a user chooses to view it on.",
+  },
+  {
+    title: "Typography & Visual Hierarchy",
+    body: "hierarchy, weight, and spacing help me to plan the flow of the application and how i want to guide the user's eye to the next part of the interface.",
+  },
+  {
+    title: "Software Development",
+    body: "i build the things that i design myself, using my software development skills to bring my ideas to full fruition.",
+  },
+]
 
 export const skills = {
   core: [
@@ -199,16 +257,16 @@ export const skills = {
     "SQL",
     "Typescript",
     "Figma",
+    "AWS",
+    "Docker",
   ],
   growing: [
-    "AWS",
     "Azure",
     "Flutter",
     "Python",
     "Django",
     "Linux",
     "React Native",
-    "Docker",
     "Godot",
   ],
   design: [
