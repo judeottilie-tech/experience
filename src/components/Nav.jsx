@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import { Menu, X, ArrowUpRight } from 'lucide-react'
 import { profile } from '../data/content'
 import ThemeToggle from './ThemeToggle'
@@ -6,7 +7,8 @@ import ThemeToggle from './ThemeToggle'
 const LINKS = [
   { href: '#about', label: 'about' },
   { href: '#projects', label: 'projects' },
-  // { href: '#design', label: 'design' }, // dormant Design section in App.jsx
+  { href: '#how-i-work', label: 'how i work' },
+  { href: '#case-studies', label: 'case studies' },
   { href: '#experience', label: 'experience' },
   { href: '#skills', label: 'skills' },
   { href: '#contact', label: 'contact' },
@@ -14,11 +16,14 @@ const LINKS = [
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
+  const { pathname } = useLocation()
+  const isHome = pathname === '/'
+  const toHome = (hash) => (isHome ? hash : `/${hash}`)
 
   return (
     <header className="sticky top-0 z-50 bg-cream/85 backdrop-blur-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="font-display text-xl font-semibold tracking-tight text-coral">
+        <a href={toHome('#top')} className="font-display text-xl font-semibold tracking-tight text-coral">
           Jude Ottilie Andersen
         </a>
 
@@ -26,7 +31,7 @@ export default function Nav() {
           {LINKS.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={toHome(link.href)}
               className="text-sm font-semibold text-ink-soft transition hover:text-coral"
             >
               {link.label}
@@ -50,6 +55,8 @@ export default function Nav() {
             className="rounded-full p-2 text-ink"
             onClick={() => setOpen((o) => !o)}
             aria-label="Toggle menu"
+            aria-expanded={open}
+            aria-controls="mobile-menu"
           >
             {open ? <X /> : <Menu />}
           </button>
@@ -57,11 +64,11 @@ export default function Nav() {
       </nav>
 
       {open && (
-        <div className="flex flex-col gap-4 border-t border-line bg-cream px-6 py-6 md:hidden">
+        <div id="mobile-menu" className="flex flex-col gap-4 border-t border-line bg-cream px-6 py-6 md:hidden">
           {LINKS.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={toHome(link.href)}
               onClick={() => setOpen(false)}
               className="text-base font-semibold text-ink"
             >

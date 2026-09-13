@@ -13,7 +13,7 @@ export default function Projects() {
       />
       <Confetti set={1} />
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <h2 className="mb-3 font-pixel text-sm tracking-wide text-coral uppercase">
+        <h2 className="mb-3 font-pixel text-sm tracking-wide text-coral-dark uppercase">
           projects
         </h2>
 

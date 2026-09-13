@@ -18,7 +18,8 @@ export default function CursorTrail() {
 
   useEffect(() => {
     const isCoarsePointer = window.matchMedia('(pointer: coarse)').matches
-    if (isCoarsePointer) return
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (isCoarsePointer || prefersReducedMotion) return
 
     function handleMove(e) {
       const now = performance.now()

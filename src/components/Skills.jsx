@@ -6,12 +6,10 @@ import Heart from './Heart'
 import Confetti from './Confetti'
 
 const GROUP_ACCENT = {
-  design: 'bg-coral/15 text-coral-dark',
   strengths: 'bg-purple/15 text-purple',
 }
 
 const GROUP_LABEL = {
-  design: 'design',
   strengths: 'strengths',
 }
 
@@ -25,7 +23,7 @@ export default function Skills() {
       />
       <Confetti set={1} />
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <h2 className="mb-10 font-pixel text-sm tracking-wide text-coral uppercase">
+        <h2 className="mb-10 font-pixel text-sm tracking-wide text-coral-dark uppercase">
           skills
         </h2>
         {/* 
@@ -87,7 +85,7 @@ export default function Skills() {
             </div>
           </motion.div>
 
-          {["design", "strengths"].map((group, gi) => (
+          {["strengths"].map((group, gi) => (
             <motion.div
               key={group}
               initial={{ opacity: 0, y: 12 }}
