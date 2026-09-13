@@ -176,6 +176,7 @@ export const caseStudies = [
     sector: 'product',
     oneLiner: 'a binder-page layout planner for trading card collectors, built around the michi method of themed card curation.',
     thumbnail: '/screen/editbinder_computer.webp',
+    accent: 'teal',
     cardBg: 'var(--color-cream)',
     liveUrl: 'https://cardcaptor.vercel.app/',
     role: 'UI/UX Designer & Full-Stack Developer',
