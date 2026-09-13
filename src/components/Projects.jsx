@@ -2,6 +2,7 @@ import { projects } from '../data/content'
 import ProjectCard from './ProjectCard'
 import Star from './Star'
 import Confetti from './Confetti'
+import Wave from './Wave'
 
 export default function Projects() {
   return (
@@ -30,6 +31,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      <Wave fill="var(--color-cream-deep)" />
     </section>
   );
 }

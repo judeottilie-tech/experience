@@ -40,7 +40,7 @@ export default function Skills() {
             transition={{ duration: 0.5 }}
           >
             <h3 className="mb-3 font-display text-lg font-semibold text-ink">
-              faves{" "}
+              stack{" "}
             </h3>
             {/*
             <p className="mb-4 text-sm text-ink-soft">

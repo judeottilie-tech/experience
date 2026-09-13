@@ -1,9 +1,9 @@
-import { Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { MotionConfig } from 'framer-motion'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
-import HowIWork from './components/HowIWork'
 import CaseStudies from './components/CaseStudies'
 import CaseStudyPage from './components/CaseStudyPage'
 import Experience from './components/Experience'
@@ -21,7 +21,6 @@ function HomePage() {
       <Hero />
       <About />
       <Projects />
-      <HowIWork />
       <CaseStudies />
       <Experience />
       <Skills />
@@ -31,6 +30,16 @@ function HomePage() {
 }
 
 function App() {
+  const { pathname, hash } = useLocation()
+
+  useEffect(() => {
+    if (hash) {
+      document.getElementById(hash.slice(1))?.scrollIntoView()
+    } else {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname, hash])
+
   return (
     <MotionConfig reducedMotion="user">
       <a

@@ -40,10 +40,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.05 }}
-          className="max-w-3xl font-display text-5xl leading-[1.08] font-semibold tracking-tight text-ink md:text-7xl"
+          className="max-w-3xl font-display text-5xl leading-[1.08] font-semibold tracking-tight text-ink md:text-5xl"
         >
           jude ottilie andersen
-          <span className="text-coral"> software developer</span>
+          <br />
+          <span className="text-coral"> UI/UX designer + software developer</span>
         </motion.h1>
 
         <motion.p
