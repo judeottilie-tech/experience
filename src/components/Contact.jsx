@@ -32,7 +32,7 @@ export default function Contact() {
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
             href={`mailto:${profile.email}`}
-            className="gloss game-btn inline-flex items-center gap-2 rounded-full bg-coral px-7 py-3.5 text-base font-bold text-[#2b1b3d]"
+            className="gloss game-btn inline-flex items-center gap-2 rounded-full bg-coral px-7 py-3.5 text-base font-bold text-[#1a0f26]"
             style={{ '--btn-shadow': 'var(--color-coral-dark)' }}
           >
             <Mail size={18} /> email me

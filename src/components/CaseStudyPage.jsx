@@ -144,7 +144,7 @@ export default function CaseStudyPage() {
           </p>
           <Link
             to="/#case-studies"
-            className="gloss game-btn inline-flex items-center gap-1 rounded-full bg-coral px-6 py-3 text-base font-bold text-[#2b1b3d]"
+            className="gloss game-btn inline-flex items-center gap-1 rounded-full bg-coral px-6 py-3 text-base font-bold text-[#1a0f26]"
             style={{ '--btn-shadow': 'var(--color-coral-dark)' }}
           >
             back to case studies <ArrowUpRight size={18} />
@@ -166,7 +166,7 @@ export default function CaseStudyPage() {
               href={study.liveUrl}
               target="_blank"
               rel="noreferrer"
-              className="gloss game-btn inline-flex w-fit items-center gap-1 rounded-full bg-coral px-6 py-3 text-base font-bold text-[#2b1b3d]"
+              className="gloss game-btn inline-flex w-fit items-center gap-1 rounded-full bg-coral px-6 py-3 text-base font-bold text-[#1a0f26]"
               style={{ '--btn-shadow': 'var(--color-coral-dark)' }}
             >
               view live site <ArrowUpRight size={18} />
@@ -212,7 +212,7 @@ export default function CaseStudyPage() {
           </Link>
           <Link
             to="/#contact"
-            className="gloss game-btn inline-flex items-center gap-1 rounded-full bg-coral px-6 py-3 text-base font-bold text-[#2b1b3d]"
+            className="gloss game-btn inline-flex items-center gap-1 rounded-full bg-coral px-6 py-3 text-base font-bold text-[#1a0f26]"
             style={{ '--btn-shadow': 'var(--color-coral-dark)' }}
           >
             get in touch <ArrowUpRight size={18} />

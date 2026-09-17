@@ -5,6 +5,7 @@ export default function ImageCarousel({ images }) {
   const [index, setIndex] = useState(0)
   const items = images.map((img) => (typeof img === 'string' ? { src: img, caption: null } : img))
   const current = items[index]
+  const currentAlt = current.caption || `case study image ${index + 1} of ${items.length}`
 
   if (items.length === 0) return null
 
@@ -29,7 +30,7 @@ export default function ImageCarousel({ images }) {
         className="relative flex h-72 items-center justify-center overflow-hidden rounded-2xl border-2 border-line bg-card sm:h-96 md:h-[480px]"
         onKeyDown={handleKeyDown}
       >
-        <img src={current.src} alt={current.caption || ''} className="max-h-full max-w-full object-contain" />
+        <img src={current.src} alt={currentAlt} className="max-h-full max-w-full object-contain" />
         {items.length > 1 && (
           <>
             <button
