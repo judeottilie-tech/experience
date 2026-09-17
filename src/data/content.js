@@ -192,7 +192,9 @@ export const caseStudies = [
         'designing for kids means simpler, more forgiving interactions than a typical adult-focused app',
       ],
     },
-    wireframeImages: ['/card-captor-wireframe.png'],
+    wireframeImages: [
+      { src: '/card-captor-wireframe.png', caption: 'wireframe sketch of the binder page layout, showing the card grid and drag targets' },
+    ],
     mockupImages: [],
     decisions: [
       "built drag-and-drop on pointer events instead of native html5 drag-and-drop, since native drag never fires on touch devices, and this needed to work for kids on tablets too",
@@ -269,6 +271,7 @@ export const skills = {
     "Linux",
     "React Native",
     "Godot",
+    "Elixir",
   ],
   design: [
     "UI/UX Design",

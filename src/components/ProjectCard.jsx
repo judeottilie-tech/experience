@@ -6,12 +6,12 @@ import Heart from './Heart'
 const ACCENTS = {
   coral: { chip: 'bg-coral/10 text-coral-dark', glow: 'rgba(255,62,165,0.35)', color: 'var(--color-coral)' },
   teal: { chip: 'bg-teal/10 text-teal-dark', glow: 'rgba(53,201,240,0.35)', color: 'var(--color-teal)' },
-  sun: { chip: 'bg-sun/20 text-[#8a6a00]', glow: 'rgba(255,217,61,0.4)', color: 'var(--color-sun)' },
+  sun: { chip: 'bg-sun/20 text-[#6b5200]', glow: 'rgba(255,217,61,0.4)', color: 'var(--color-sun)' },
   purple: { chip: 'bg-purple/10 text-purple', glow: 'rgba(140,82,255,0.35)', color: 'var(--color-purple)' },
 }
 
 const STATUS_STYLE = {
-  'shippin soon': 'bg-sun/25 text-[#8a6a00]',
+  'shippin soon': 'bg-sun/25 text-[#6b5200]',
   'in progress': 'bg-teal/20 text-teal-dark',
   GitHub: 'bg-ink/5 text-ink-soft',
 }

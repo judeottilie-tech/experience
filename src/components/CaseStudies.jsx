@@ -8,7 +8,7 @@ import Heart from './Heart'
 const ACCENTS = {
   coral: { chip: 'bg-coral/10 text-coral-dark', glow: 'rgba(255,62,165,0.35)', color: 'var(--color-coral)' },
   teal: { chip: 'bg-teal/10 text-teal-dark', glow: 'rgba(53,201,240,0.35)', color: 'var(--color-teal)' },
-  sun: { chip: 'bg-sun/20 text-[#8a6a00]', glow: 'rgba(255,217,61,0.4)', color: 'var(--color-sun)' },
+  sun: { chip: 'bg-sun/20 text-[#6b5200]', glow: 'rgba(255,217,61,0.4)', color: 'var(--color-sun)' },
   purple: { chip: 'bg-purple/10 text-purple', glow: 'rgba(140,82,255,0.35)', color: 'var(--color-purple)' },
 }
 const ACCENT_CYCLE = ['coral', 'teal', 'sun', 'purple']
@@ -26,7 +26,7 @@ export default function CaseStudies() {
   return (
     <section id="case-studies" className="relative bg-cream-deep">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <h2 className="mb-3 font-pixel text-sm tracking-wide text-coral-dark uppercase">case studies</h2>
+        <p className="mb-3 font-pixel text-sm tracking-wide text-coral-dark uppercase">case studies</p>
         <h2 className="mb-3 font-display text-3xl font-semibold text-ink md:text-4xl">
           ux work
         </h2>
@@ -82,7 +82,7 @@ export default function CaseStudies() {
                     )}
 
                     <span
-                      className="gloss game-btn inline-flex w-fit items-center gap-1 rounded-full bg-coral px-4 py-2 text-sm font-bold text-[#2b1b3d]"
+                      className="gloss game-btn inline-flex w-fit items-center gap-1 rounded-full bg-coral px-4 py-2 text-sm font-bold text-[#1a0f26]"
                       style={{ '--btn-shadow': 'var(--color-coral-dark)' }}
                     >
                       read case study <ArrowUpRight size={14} />
