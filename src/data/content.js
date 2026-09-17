@@ -216,6 +216,50 @@ export const caseStudies = [
       { src: '/screen/pickcard_phone.webp', caption: 'the card picker, mobile' },
     ],
   },
+  {
+    slug: 'portfolio-io',
+    title: 'portfol.io',
+    sector: 'commissions',
+    oneLiner: 'a portfolio page for artists that also takes commission proposals directly from guests, no account needed.',
+    thumbnail: '/screen/portfolio-io_profile.png',
+    accent: 'coral',
+    cardBg: 'var(--color-cream)',
+    liveUrl: 'https://portfoleyeoh.vercel.app/',
+    role: 'UI/UX Designer & Full-Stack Developer',
+    duration: 'started as an NSS front-end capstone, live and growing since',
+    tools: ['Figma', 'React', 'JavaScript', 'Tailwind CSS', 'REST API'],
+    problem:
+      "i've used a lot of art commission sites, and they all have the same tradeoff. commission marketplaces throw every artist into the same pool, so you need the flashiest listing in the search results just to get seen. portfolio sites let you show your work beautifully, but there's no way to actually take commissions through them. i wanted something in between: a portfolio-style page an artist could put on a business card, with a simple url like portfol.io/artist, where a guest could send a commission proposal without needing an account. the artist's page still reads like a personal portfolio, but they get the power to manage and accept commissions in the same place.",
+    research: {
+      summary:
+        "my research came from being an artist who's actually used these sites to look for work. i compared how commission marketplaces handle discovery against how portfolio builders handle presentation, since neither model covers both halves of what an artist actually needs.",
+      findings: [
+        "marketplaces optimize for the platform's search results, not for a specific artist being findable on their own terms",
+        'portfolio builders have no built-in way to receive or manage a commission request at all',
+      ],
+    },
+    wireframeImages: [
+      { src: '/portfolio-io-wireframe.png', caption: 'route-by-route wireframe covering the guest profile, commission detail, auth, and the full artist dashboard' },
+    ],
+    mockupImages: [],
+    decisions: [
+      "the hardest part was designing for two very different users on the same page: the artist, who's behind a login managing commission types and proposals, and the guest, who shows up with no account and just wants to ask about a piece. i built the guest-facing proposal form to feel like part of the artist's portfolio instead of a generic contact form, while keeping the dashboard side on its own separate crud logic",
+      'each commission type has a limited number of slots, shown as open or taken right on the card, so a guest can see availability before they ever send a proposal',
+      'incoming proposals go through accept/decline first, then move into an accepted list with their own status dropdown (accepted, contacted, denied), so i can track where i actually am with a client past just yes or no',
+    ],
+    outcome:
+      "portfol.io is live. an artist creates an account, sets up their commission types with images and pricing, and shares their own portfol.io/username link. guests can browse, filter, and submit a proposal with no account, and the artist manages everything else, accepting or declining proposals and tracking status, from their own dashboard.",
+    currentStateImages: [
+      { src: '/screen/portfolio-io_profile.png', caption: "the artist's public profile — bio, socials, and a searchable grid of commission types" },
+      { src: '/screen/portfolio-io_commission-request.png', caption: 'a single commission type, with the guest proposal form below it' },
+      { src: '/screen/portfolio-io_dashboard.png', caption: 'the dashboard — commission types plus incoming and accepted proposals' },
+      { src: '/screen/portfolio-io_proposals.png', caption: 'incoming and accepted proposals, each with its own accept/decline or status control' },
+      { src: '/screen/portfolio-io_add-commission.png', caption: 'adding a new commission type — price, slots, description, and tags' },
+      { src: '/screen/portfolio-io_edit-commission.png', caption: 'editing an existing commission type' },
+      { src: '/screen/portfolio-io_edit-profile.png', caption: 'editing the artist profile — bio, avatar, and social links' },
+    ],
+    currentStateImagesMobile: [],
+  },
 ]
 
 export const howIWork = [
